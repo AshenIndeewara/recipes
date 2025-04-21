@@ -1,0 +1,266 @@
+.paragraph {
+  text-align: center;
+  color: rgba(66, 64, 64, 0.795);
+  font-size: 20px;
+  padding: 10px 0 15px;
+}
+.img-container {
+  width: 100%;
+  padding: 25px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: centerx;
+  gap: 30px;
+}
+.img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0;
+  border: 8px solid rgb(185, 185, 185);
+  object-fit: cover;
+  transition: all 0.7s ease-in-out;
+}
+
+.img:hover {
+  transform: scale(1.1);
+  border-radius: 15px;
+  border: 3px solid #ecbf6b;
+}
+.content {
+  display: flex;
+}
+.img-pumpkin {
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+  padding: 10px;
+}
+.content-para {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+}
+.method {
+  padding: 30px;
+}
+.ingredients {
+  padding: 20px 0pc 30px;
+  margin: 0;
+}
+.method ul li {
+  padding: 10px 0;
+  font-size: 1.2rem;
+}
+.steps li {
+  padding: 5px 0;
+  font-size: 1.2rem;
+}
+
+/* Media query for screens up to 320px */
+@media (max-width: 320px) {
+  .paragraph {
+    font-size: 16px;
+    padding: 8px 0 12px;
+  }
+  .img-container {
+    flex-direction: column;
+    padding: 15px 5px;
+    gap: 20px;
+  }
+  .img {
+    width: 150px;
+    height: 150px;
+  }
+  .img-pumpkin {
+    width: 100%;
+    height: auto;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .content-para {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+  .method {
+    padding: 15px;
+  }
+  .ingredients {
+    padding: 15px 0 20px;
+  }
+  .method ul li,
+  .steps li {
+    font-size: 1rem;
+    padding: 5px 0;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  .paragraph {
+    font-size: 18px;
+  }
+  .img-container {
+    flex-direction: column;
+    padding: 20px 8px;
+    gap: 25px;
+  }
+  .img {
+    width: 175px;
+    height: 175px;
+  }
+  .img-pumpkin {
+    width: 100%;
+    height: auto;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .content-para {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+  }
+  .method {
+    padding: 20px;
+  }
+  .ingredients {
+    padding: 18px 0 25px;
+  }
+  .method ul li,
+  .steps li {
+    font-size: 1.1rem;
+  }
+}
+
+/* Media query for screens between 376px and 425px */
+@media (min-width: 376px) and (max-width: 425px) {
+  .paragraph {
+    font-size: 19px;
+  }
+  .img-container {
+    flex-wrap: wrap;
+    padding: 22px 10px;
+  }
+  .img {
+    width: 180px;
+    height: 180px;
+  }
+  .img-pumpkin {
+    width: 100%;
+    height: auto;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .content-para {
+    padding: 10px 25px;
+    font-size: 1.15rem;
+  }
+  .method {
+    padding: 25px;
+  }
+  .ingredients {
+    padding: 20px 0 28px;
+  }
+  .method ul li,
+  .steps li {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .img-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .img {
+    width: 190px;
+    height: 190px;
+  }
+  .img-pumpkin {
+    width: 80%;
+    height: auto;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .content-para {
+    padding: 15px 30px;
+  }
+  .method {
+    padding: 25px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .img-container {
+    justify-content: space-around;
+  }
+  .img-pumpkin {
+    width: 400px;
+    height: 400px;
+  }
+  .content {
+    flex-direction: row;
+  }
+  .content-para {
+    padding: 10px 20px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .paragraph {
+    font-size: 1.25rem;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .img-container {
+    padding: 25px 10px;
+    gap: 30px;
+  }
+
+  .img {
+    width: 200px;
+    height: 200px;
+    border: 8px solid rgb(185, 185, 185);
+  }
+
+  .img:hover {
+    transform: scale(1.1);
+  }
+
+  .content {
+    justify-content: center;
+    gap: 25px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .img-pumpkin {
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+  }
+
+  .content-para {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    gap: 10px;
+  }
+
+  .method {
+    padding: 30px;
+  }
+
+  .ingredients {
+    padding: 20px 0 30px;
+  }
+
+  .method ul li,
+  .steps li {
+    padding: 10px 0;
+    font-size: 1.2rem;
+  }
+}
